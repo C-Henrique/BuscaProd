@@ -2,7 +2,7 @@
     Autor:
      C. Henrique
     Descrição:
-     Feito para realização de consultas no servidor Maranhão e geração de relatórios em excel.
+     Feito para realização de USUARIOs no servidor Maranhão e geração de relatórios em excel.
     Versão:
      1.3v
     Build:
@@ -12,7 +12,7 @@
 
 import config.config as cfg
 def buscar():
-    print("Escolha um banco para Consultar :")
+    print("Escolha um banco para USUARIOr :")
     print("1 . Loja F04")
     print("2 . Loja F05")
     print("3 . Loja F10")
@@ -24,35 +24,35 @@ def buscar():
 
     opcao = int(input("Digite somente uma opção: "))
     if opcao == 1:
-        db = cfg.connection('Pcicero_F04', '192.168.0.78', 'consulta', 'A1b2c3@')
+        db = cfg.connection('Pcicero_F04', 'SERVIDOR', 'USUARIO', 'SENHA')
         loja = 'F04'
         print(f'Conectando na loja {loja}')
     elif opcao == 2:
-        db = cfg.connection('Pcicero_F05', '192.168.0.78', 'consulta', 'A1b2c3@')
+        db = cfg.connection('Pcicero_F05', 'SERVIDOR', 'USUARIO', 'SENHA')
         loja = 'F05'
         print(f'Conectando na loja {loja}')
     elif opcao == 3:
-        db = cfg.connection('Pcicero_F10', '192.168.0.78', 'consulta', 'A1b2c3@')
+        db = cfg.connection('Pcicero_F10', 'SERVIDOR', 'USUARIO', 'SENHA')
         loja = 'F10'
         print(f'Conectando na loja {loja}')
     elif opcao == 4:
-        db = cfg.connection('Pcicero_F11', '192.168.0.78', 'consulta', 'A1b2c3@')
+        db = cfg.connection('Pcicero_F11', 'SERVIDOR', 'USUARIO', 'SENHA')
         loja = 'F11'
         print(f'Conectando na loja {loja}')
     elif opcao == 5:
-        db = cfg.connection('Pcicero_F17', '192.168.0.78', 'consulta', 'A1b2c3@')
+        db = cfg.connection('Pcicero_F17', 'SERVIDOR', 'USUARIO', 'SENHA')
         loja = 'F17'
         print(f'Conectando na loja {loja}')
     elif opcao == 6:
-        db = cfg.connection('Pcicero_F18', '192.168.0.78', 'consulta', 'A1b2c3@')
+        db = cfg.connection('Pcicero_F18', 'SERVIDOR', 'USUARIO', 'SENHA')
         loja = 'F18'
         print(f'Conectando na loja {loja}')
     elif opcao == 7:
-        db = cfg.connection('Pcicero_F20', '192.168.0.78', 'consulta', 'A1b2c3@')
+        db = cfg.connection('Pcicero_F20', 'SERVIDOR', 'USUARIO', 'SENHA')
         loja = 'F20'
         print(f'Conectando na loja {loja}')
     elif opcao == 8:
-        db = cfg.connection('Pcicero_F22', '192.168.0.78', 'consulta', 'A1b2c3@')
+        db = cfg.connection('Pcicero_F22', 'SERVIDOR', 'USUARIO', 'SENHA')
         loja = 'F22'
         print(f'Conectando na loja {loja}')
     else:
